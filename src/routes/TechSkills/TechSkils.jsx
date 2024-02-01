@@ -1,90 +1,52 @@
-import Slider from 'react-slick'
-
-import CSSIcon from '../../assets/css3.svg'
-import React from 'react'
-import { SliderContainer, SlidersContainer } from './TechSkill.styles'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import Aos from "aos";
+import { useEffect, useContext } from "react";
+import "aos/dist/aos.css";
+import { TeckIteam, TeckItemSection, StyledSVG } from "./TechSkill.styles";
+import { ReactComponent as ExpresSVG } from "../../assets/express.svg";
+import { ReactComponent as CssSVG } from "../../assets/css3.svg";
+import { ReactComponent as JavaScriptSVG } from "../../assets/JavaScript.svg";
+import { ReactComponent as NodeSVG } from "../../assets/nodejs.svg";
+import { ReactComponent as ReactSVG } from "../../assets/react-2.svg";
+import { ReactComponent as MongoDBSVG } from "../../assets/mongodb.svg";
+import { ReactComponent as TypeScriptSVG } from "../../assets/typescript.svg";
+import { ReactComponent as ReduxSVG } from "../../assets/redux.svg";
+import { SwitchContext } from "../../contexts/switch.context";
 
 const TechSkils = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 0,
-    vertical: true,
-    arrows: false,
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
 
-    // cssEase: 'linear',
-  }
+  const { isThemeDark } = useContext(SwitchContext);
+
   return (
-    <SlidersContainer>
-      <SliderContainer>
-        <Slider {...settings}>
-          <div></div>
-          <div>
-            <img src={CSSIcon} alt='' height='100' width='100' />
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </SliderContainer>
+    <TeckItemSection>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-left">
+        <StyledSVG as={ExpresSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-right">
+        <StyledSVG as={CssSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-left">
+        <StyledSVG as={JavaScriptSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-right">
+        <StyledSVG as={NodeSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-left">
+        <StyledSVG as={ReactSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-right">
+        <StyledSVG as={MongoDBSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-left">
+        <StyledSVG as={TypeScriptSVG} />
+      </TeckIteam>
+      <TeckIteam isThemeDark={isThemeDark} data-aos="flip-right">
+        <StyledSVG as={ReduxSVG} />
+      </TeckIteam>
+    </TeckItemSection>
+  );
+};
 
-      <SliderContainer>
-        <Slider {...settings}>
-          <div></div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </SliderContainer>
-      <SliderContainer>
-        <Slider {...settings}>
-          <div></div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </SliderContainer>
-    </SlidersContainer>
-  )
-}
-
-export default TechSkils
+export default TechSkils;

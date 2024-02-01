@@ -11,7 +11,7 @@ const PROJECTS = [
     github: 'https://github.com/chichileishvili/jobify-app',
     web: 'https://jobify-app-41eq.onrender.com/',
     imageUrl: '/images/jobify-screenshot.png',
-    technologies: ['React', 'Node.js', 'Express', 'MONGODB'],
+    technologies: ['React', 'Node.js', 'Express', 'MONGODB','typescript'],
   },
   {
     title: 'Native Clothing',
