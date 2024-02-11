@@ -11,7 +11,7 @@ const PROJECTS = [
     github: 'https://github.com/chichileishvili/jobify-app',
     web: 'https://jobify-app-41eq.onrender.com/',
     imageUrl: '/images/jobify-screenshot.png',
-    technologies: ['React', 'Node.js', 'Express', 'MONGODB','typescript'],
+    technologies: ['React', 'Node.js', 'Express', 'MONGODB','TYPESCRIPT'],
   },
   {
     title: 'Native Clothing',
@@ -28,7 +28,7 @@ const PROJECTS = [
     technologies: ['React', 'FIREBASE'],
   },
   {
-    title: 'Money Prducts',
+    title: 'Money Products',
     github: 'https://github.com/chichileishvili/my-money',
     web: 'https://money-products.netlify.app/',
     imageUrl: '/images/finance-tracker.PNG',
@@ -36,16 +36,16 @@ const PROJECTS = [
   },
 
   {
-    title: 'Chat App(Sasaubro App)',
+    title: 'Chat App',
     github: 'https://github.com/chichileishvili/chat-app',
-    web: 'https://visaubrot-app-818c8500ffc7.herokuapp.com/',
+    web: 'https://chat-app-vhm7.onrender.com',
     imageUrl: '/images/chat-app.PNG',
     technologies: ['Node.js', 'SOCKET.IO'],
   },
   {
     title: 'Weather App',
     github: 'https://github.com/chichileishvili/weather-app',
-    web: 'https://amindi-app-c19db985e81e.herokuapp.com/',
+    web: 'https://weather-app-xwqa.onrender.com',
     imageUrl: '/images/weather-app.PNG',
     technologies: ['Node.js'],
   },
