@@ -50,6 +50,9 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     }
+    Route {
+      margin-right: 20px;
+    }
 
     ::-webkit-scrollbar {
       width: 8px;
