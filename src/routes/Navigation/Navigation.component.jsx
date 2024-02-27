@@ -62,8 +62,7 @@ const Navigation = () => {
                   size="30px"
                   onClick={handleNavbarClick}
                 />
-
-                <li>
+                <li onClick={handleNavbarClick}>
                   <Navlink
                     className="first-link"
                     isThemeDark={isThemeDark}
@@ -72,17 +71,17 @@ const Navigation = () => {
                     Home
                   </Navlink>
                 </li>
-                <li>
+                <li onClick={handleNavbarClick}>
                   <Navlink isThemeDark={isThemeDark} to="/projects">
                     Projects
                   </Navlink>
                 </li>
-                <li>
+                <li onClick={handleNavbarClick}>
                   <Navlink isThemeDark={isThemeDark} to="/about">
                     About
                   </Navlink>
                 </li>
-                <li>
+                <li onClick={handleNavbarClick}>
                   <Navlink isThemeDark={isThemeDark} to="/tech-skills">
                     Tech Skills
                   </Navlink>
