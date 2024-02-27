@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const darkThemeStyles = css`
   color: rgb(229 229 229);
-  hoover: rgb(229 229 229);
 `;
 
 export const Main = styled.main`
@@ -30,7 +29,7 @@ export const NavContainer = styled.nav`
   justify-content: space-around;
   height: 13rem;
   align-items: center;
-  position: fixed;
+
   ${({ isThemeDark }) => isThemeDark && darkThemeStyles}
   @media screen and (max-width: 480px) {
     transition: opacity 0.9s ease-in-out, transform 0.3s ease-in-out;
